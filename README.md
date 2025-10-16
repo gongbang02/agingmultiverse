@@ -40,7 +40,7 @@
         <img src="https://img.shields.io/badge/🐳-Project%20Page-blue">
         </a>
         <a href="https://arxiv.org/abs/2506.21008" target='_blank'>
-        <img src="https://img.shields.io/badge/arXiv-2411.14521-b31b1b.svg">
+        <img src="https://img.shields.io/badge/arXiv-2506.21008-b31b1b.svg">
         </a>
     </h4>
 </div>
@@ -132,7 +132,7 @@ After obtaining the aging direction, run image editing with:
 
 ```python
 python src/edit.py \
---source_prompt 'A photo of {ethnicity} {gender} at {input_age} years old.' \
+--source_prompt "A photo of {ethnicity} {gender} at {input_age} years old." \
 --target_prompt {llm_refined_target_prompt} \
 --target_age {target_age} \
 --input_age {input_age} \
@@ -146,7 +146,7 @@ python src/edit.py \
 --direction_path {path_to_aging_direction}
 ```
 
-Prompt enhancement is not built-in in our code, we recommend users take our meta prompt in ```system_prompt.txt``` for prompt enhancement with any LLM of their choice.
+Prompt enhancement is not built-in in our code, we recommend users take our meta prompt in ```meta_prompt.txt``` for prompt enhancement with any LLM of their choice.
 
 ## ❤️ Acknowledgements
 We thank [FLUX](https://github.com/black-forest-labs/flux/tree/main) and [RF-Solver-Edit](https://github.com/wangjiangshan0725/RF-Solver-Edit/tree/main) for their clean codebase.
