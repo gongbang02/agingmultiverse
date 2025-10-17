@@ -115,6 +115,7 @@ def main(
     info = {}
     info['feature_path'] = args.feature_path
     info['feature'] = {}
+    info['save_feature'] = args.save_feature
     info['inject_step'] = args.inject
     info['input_age'] = input_age
     info['direction_path'] = args.direction_path
@@ -250,6 +251,8 @@ if __name__ == "__main__":
                         help='the input age of the source image')
     parser.add_argument('--direction_path', type=str, required=True,
                         help='the path to the directory containing precomputed aging direction features')
+    parser.add_argument('--save_feature', action='store_true', default=False, 
+                        help='Enable feature extraction and saving')
 
     args = parser.parse_args()
 
