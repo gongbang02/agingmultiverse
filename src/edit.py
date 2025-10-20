@@ -224,7 +224,7 @@ def main(
 
 if __name__ == "__main__":
     
-    parser = argparse.ArgumentParser(description='RF-Edit')
+    parser = argparse.ArgumentParser()
 
     parser.add_argument('--name', default='flux-dev', type=str,
                         help='flux model')

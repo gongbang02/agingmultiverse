@@ -174,14 +174,14 @@ def process_attention_type(attention_type, base_path, output_dir_averages, outpu
 # --- Main Execution ---
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Compute aging direction from extracted features')
+    parser = argparse.ArgumentParser()
     
     parser.add_argument('--base_path', type=str, required=True,
-                        help='Path to directory containing extracted features (e.g., /path/to/features_young/person_kv)')
+                        help='Path to directory containing extracted features')
     parser.add_argument('--output_dir_averages', type=str, required=True,
-                        help='Output directory for age group averages (e.g., /path/to/age_groups_kv)')
+                        help='Output directory for age group averages')
     parser.add_argument('--output_dir_direction', type=str, required=True,
-                        help='Output directory for aging direction features (e.g., /path/to/editing_direction_kv)')
+                        help='Output directory for aging direction features')
     
     args = parser.parse_args()
     
