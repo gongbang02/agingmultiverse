@@ -125,6 +125,8 @@ python src/attention_direction.py \
 --output_dir_direction {path_to_store_aging_direction}
 ```
 
+We provide a general aging direction calculated from various identities at https://agingmultiverse.cs.unc.edu/download/ for quickly trying out our method. However, for better stability, we still recommend computing per-identity aging direction.
+
 
 ## ⚡ Image Editing
 
